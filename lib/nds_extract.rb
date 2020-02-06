@@ -31,7 +31,7 @@ def directors_totals(nds)
       
       itterable += 1
     end
-    totals.
+    totals.push({directors_database[index][:name], total})
     index += 1
   end
   
