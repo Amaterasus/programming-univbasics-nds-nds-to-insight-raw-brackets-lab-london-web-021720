@@ -32,7 +32,7 @@ def directors_totals(nds)
       
       itterable += 1
     end
-    totals[director_name] => director_total
+    totals[director_name] = director_total
     
     index += 1
   end
