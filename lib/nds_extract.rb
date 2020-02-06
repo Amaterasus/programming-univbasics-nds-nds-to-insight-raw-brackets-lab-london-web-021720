@@ -19,27 +19,20 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   
-  # we want an array of hashes of the totals.
-  # we need to loop over the inital array
-  # 
-  
   index = 0
   totals = []
   
+  while index < directors_database.length do
+    itterable = 0
+    
+    while itterable < directors_database[index][:movies].length do
+      
+      
+      itterable += 1
+    end
+    
+    index += 1
+  end
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  nil
+  return totals
 end
