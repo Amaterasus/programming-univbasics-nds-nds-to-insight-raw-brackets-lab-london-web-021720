@@ -27,7 +27,7 @@ def directors_totals(nds)
     total = 0
     
     while itterable < directors_database[index][:movies].length do
-      total += directors_database[index][:movies][itterable][:worldwide_gross].to_i
+      total += directors_database[index][:movies][itterable][:worldwide_gross]
       
       itterable += 1
     end
