@@ -24,13 +24,14 @@ def directors_totals(nds)
   
   while index < directors_database.length do
     itterable = 0
+    total = 0
     
     while itterable < directors_database[index][:movies].length do
-      directors_database[index][:movies]
+      total += directors_database[index][:movies][itterable][:worldwide_gross]
       
       itterable += 1
     end
-    
+    totals.
     index += 1
   end
   
