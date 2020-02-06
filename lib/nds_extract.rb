@@ -22,16 +22,16 @@ def directors_totals(nds)
   index = 0
   totals = []
   
-  while index < directors_database.length do
+  while index < nds.length do
     itterable = 0
     total = 0
     
-    while itterable < directors_database[index][:movies].length do
-      total += directors_database[index][:movies][itterable][:worldwide_gross]
+    while itterable < nds[index][:movies].length do
+      total += nds[index][:movies][itterable][:worldwide_gross]
       
       itterable += 1
     end
-    totals.push({directors_database[index][:name].to_s => total})
+    totals.push({nds[index][:name].to_s => total})
     index += 1
   end
   
